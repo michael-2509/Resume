@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+*{
+    box-sizing:border-box;
+    margin: 0;
+}
+
+body {
+    /* background-color: coral; */
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+.margin {
+    margin-left: 120px;
+    margin-right: 120px;
+}
+
+.margin .year {
+    color: grey;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+h3 {
+    background-color: black;
+    color: white;
+    display: inline-block;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding: 10px 15px;
+}
+
+p{
+    margin-bottom: 10px;
+}
+
+.logo {
+    background-color:pink;
+    padding: 15px;
+}
+
+.first{ 
+    background-color:dodgerblue;
+   }
+
+.first span {
+    background-color: white;
+    
+    width: 8px;
+}
+
+.first div {
+    padding-left: 50px;
+}
+
+.first p{
+    margin-top: 20px;;
+}
+
+.flex {
+    display: flex;
+}
+
+img {
+    width: 250px;
+   
+}
+
+.flex div {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.margin .profile {
+    line-height: 2em;
+  
+}
+
+.margin .bold {
+   font-weight:bold;
+}
+
+.margin ul li {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.margin .skill {
+    display: flex;
+    justify-content: space-between;
+}
+
+.margin .skill .bar {
+    background-color: lightgrey;
+    height: 10px;
+    margin-bottom: 10px;
+}
+
+.margin .skill .bar span {
+    background-color: gray;
+    display: block;
+    height: 100%;
+}
+
+.last {
+    margin-bottom: 100px;
+}

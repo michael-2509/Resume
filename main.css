@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;510;700&display=swap');
 
 *{
     box-sizing:border-box;
@@ -8,18 +8,38 @@
 body {
     /* background-color: coral; */
     font-family: 'Roboto', sans-serif;
-    
+}
+
+@media screen and  (max-width:510px){
+    body {
+        background-color:white;
+    }
 }
 
 .margin {
     margin-left: 120px;
     margin-right: 120px;
+    font-size: 2rem;
+}
+
+@media screen and (max-width:510px){
+    .margin {
+        font-size: .5rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
 }
 
 .margin .year {
     color: grey;
-    font-size: 14px;
+    font-size: 1.8rem ;
     margin-bottom: 25px;
+}
+
+@media screen and (max-width:510px) {
+    .margin .year {
+        font-size: .4rem;
+    }
 }
 
 h3 {
@@ -31,18 +51,44 @@ h3 {
     padding: 10px 15px;
 }
 
+@media screen and (max-width:510px) {
+    h3 {
+        padding: 5px 7.5px;
+    }
+}
+
 p{
     margin-bottom: 10px;
 }
 
 .logo {
-    background-color:pink;
+    background-color:snow;
     padding: 15px;
+}
+
+@media screen and (max-width:510px) {
+    .logo {
+        padding: 5px;
+    }
+    
+}
+
+@media screen and (max-width:510px) {
+    .logo img {
+        width: 80px;
+        height: 13px;
+    }
 }
 
 .first{ 
     background-color:dodgerblue;
    }
+
+   @media screen and (max-width:510px) { 
+       .first img {
+           width: 85px;
+       }
+}
 
 .first span {
     background-color: white;
@@ -54,8 +100,23 @@ p{
     padding-left: 50px;
 }
 
+@media screen and (max-width:510px) {
+    .first div {
+        padding-left: 20px;
+        font-size: .5rem;
+    }
+    
+}
+
 .first p{
     margin-top: 20px;;
+}
+
+@media screen and (max-width:510px) {
+    .first p {
+        margin-top: 5px;
+    }
+    
 }
 
 .flex {
@@ -64,8 +125,9 @@ p{
 
 img {
     width: 250px;
-   
 }
+
+
 
 .flex div {
     display:flex;
@@ -93,10 +155,23 @@ img {
     justify-content: space-between;
 }
 
+@media screen and (max-width:510px) {
+    .margin .skill {
+        display: block;
+        margin-right: 7rem;
+    }
+}
+
 .margin .skill .bar {
     background-color: lightgrey;
     height: 10px;
     margin-bottom: 10px;
+}
+
+@media screen and (max-width:510px) {
+    .margin .skill .bar {
+        height:5px;
+    }
 }
 
 .margin .skill .bar span {

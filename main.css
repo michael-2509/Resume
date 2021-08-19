@@ -6,7 +6,7 @@
 }
 
 body {
-    /* background-color: coral; */
+    background-color: hsl(0, 0%, 98%);
     font-family: 'Roboto', sans-serif;
 }
 
@@ -17,9 +17,14 @@ body {
 }
 
 .margin {
+    margin-top: 10px;
     margin-left: 120px;
     margin-right: 120px;
-    font-size: 2rem;
+    font-size: 1.5rem;
+    padding: 0px 20px 15px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 10px 20px #c0c0c0;
 }
 
 @media screen and (max-width:510px){
@@ -32,7 +37,7 @@ body {
 
 .margin .year {
     color: grey;
-    font-size: 1.8rem ;
+    font-size: 1rem ;
     margin-bottom: 25px;
 }
 
@@ -43,7 +48,7 @@ body {
 }
 
 h3 {
-    background-color: black;
+    background-color: #216fba;
     color: white;
     display: inline-block;
     margin-top: 30px;
@@ -81,7 +86,7 @@ p{
 }
 
 .first{ 
-    background-color:dodgerblue;
+    background-color: #216fba;
    }
 
    @media screen and (max-width:510px) { 
@@ -164,6 +169,8 @@ img {
 
 .margin .skill .bar {
     background-color: lightgrey;
+    justify-content: flex-start;
+    position: relative;
     height: 10px;
     margin-bottom: 10px;
 }
@@ -175,10 +182,17 @@ img {
 }
 
 .margin .skill .bar span {
+    animation: load 10s normal forwards;
+    animation-delay: 1s;
+    animation-iteration-count: 3;
     background-color: gray;
     display: block;
     height: 100%;
 }
+
+@keyframes load {
+    0% { width: 0; } 
+  }
 
 .last {
     margin-bottom: 100px;

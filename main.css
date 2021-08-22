@@ -197,3 +197,64 @@ img {
 .last {
     margin-bottom: 100px;
 }
+
+.project {
+    background-color: #216fba;
+    color: black;
+    margin: 10px 30px 100px 30px;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    box-shadow: 0px 10px 20px #3d3c3c;
+  
+}
+.project h3 {
+    color: black;
+}
+
+.project .grid {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 33% 33% 33%;
+    justify-items: center;
+    row-gap: 100px;
+    margin-bottom: 100px;
+}
+
+@media screen and (max-width:500px) {
+    .project .grid {
+        display: block;
+        padding-bottom: 2rem;
+        padding-left: 2.5rem;
+    }
+    
+    .project div {
+        margin-bottom: 1rem;
+    }
+}
+
+.project .grid img {
+    width: 250px;
+    height: 250px;
+}
+
+@media screen and (max-width:375px) {
+    .project h3 {
+        width:100px;
+        
+    }
+
+    .project .grid {
+        padding-left: 1.5rem;
+    }
+    .project .grid img {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+.project .grid a {
+    color: black;
+    text-align: center;
+    text-decoration: none;
+
+}

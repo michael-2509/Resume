@@ -89,9 +89,14 @@ p{
     background-color: #216fba;
    }
 
+. first {
+    height:200px
+    }
+
    @media screen and (max-width:510px) { 
        .first img {
            width: 85px;
+           height: 68px;
        }
 }
 
